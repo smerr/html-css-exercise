@@ -9,81 +9,147 @@
         
         <div id="main-image">
             <img id="topPicture" src="./images/main.png" alt="main picture">
+            <div class="main-pic-text">
+                <p id="title">λ cmder</p>
+                <p id="sub-title">Portable console emulator for Windows</p>
+            </div>
         </div>
 
         <div id="description">
             <hr>
-              <p>Cmder is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start. </p>
+              <p id="intro">Cmder is a software package created out of pure frustration 
+                over the absence of nice console emulators on Windows. It is based on 
+                amazing software, and spiced up with the Monokai color scheme and 
+                a custom prompt layout, looking sexy from the start. </p>
             <hr>
         </div>
 
         <div id="pic-list">
             <div id="pic-one" class="small-pic">
                 <img src="./images/conemu_thumb.png" alt="ConEmu picture">
-                <h3>With help of the best</h3>
-                <p>Think about cmder more as a software package than a separate app. All the magic is happening through <a href="https://conemu.github.io/">ConEmu</a>. With enhancements from <a href="https://mridgers.github.io/clink/">Clink</a>.</p>
+                <h4>With help of the best</h4>
+                <p>Think about cmder more as a software package than a separate app. 
+                    All the magic is happening through <a href="https://conemu.github.io/">ConEmu</a>. 
+                    With enhancements from <a href="https://mridgers.github.io/clink/">Clink</a>.</p>
             </div>
 
             <div id="pic-two" class="small-pic">
                 <img src="./images/bye_thumb.png" alt="Bye picture">
-                <h3>Total portability</h3>
-                <p>Carry it with you on a USB stick or in the Cloud, so your settings, aliases and history can go anywhere you go. You will not see that ugly Windows prompt ever again.</p>
+                <h4>Total portability</h4>
+                <p>Carry it with you on a USB stick or in the Cloud, so your settings,
+                     aliases and history can go anywhere you go. You will not see that 
+                     ugly Windows prompt ever again.</p>
             </div>
 
             <div id="pic-three" class="small-pic">
                 <img src="./images/git_thumb.png" alt="Git picture">
-                <h3>Git and others</h3>
-                <p>Oooh yes! If you decide to use the slightly bigger git-for-windows version, you will have all Unix commands ready in PATH so that you can <code>git init</code> or <code>cat</code> instantly on every machine.</p>
+                <h4>Git and others</h4>
+                <p>Oooh yes! If you decide to use the slightly bigger <a href="https://gitforwindows.org/">git-for-windows</a> 
+                    version, you will have all Unix commands ready in PATH so that you 
+                    can <code>git init</code> or <code>cat</code> instantly on every machine.</p>
             </div>
         </div>
 
-        <h2>Download</h2>
-        <p>Latest Version: v1.3.11</p>
-        <p>GitHub Repository (for issues/requests/source)</p>
+        <h3>Download</h3>
 
-        <p>Installation</p>
-        <ol type="1">
-            <li>Unzip</li>
-            <li>(optional) Place your own executable files into the bin folder to be injected into your PATH.</li>
-            <li>Run Cmder (Cmder.exe)</li>
-        </ol>
+            <div id="download-column">
+                <div id="column-one">
+                    <p>Latest Version: v1.3.11</p>
+                    <p><a href="https://github.com/cmderdev/cmder">GitHub Repository</a> (for issues/requests/source)</p>
+                </div>
 
-        <h2>Keyboard shortcuts</h2>
+                <div id="column-two">
+                    <div id="button-row">
+                        <div id="button-one">
+                            <button id="mini-button" class="button">Download Mini</button>
+                            <p>~8.5MB</p>
+                        </div>
+                        
+                        <div id="button-two">
+                            <button id="full-button" class="button">Download Full</button>
+                            <p>(with Git for Windows) ~108MB  or ~58MB 7z</p>
+                        </div>
+                    </div>                
+                </div>
+                
+                <div id="column-three">
+                    <p>Installation</p>
+                    <ol type="1">
+                        <li>Unzip</li>
+                        <li>(optional) Place your own executable files into the <code>bin</code> folder to 
+                            be injected into your PATH.</li>
+                        <li>Run Cmder (Cmder.exe)</li>
+                    </ol>
+                </div>
+            </div>
 
-        <h3>Tab manipulation</h3>
-        <p>Ctrl + ` : Global Summon from taskbar</p>
-        <p>Win + Alt + p : Preferences (Or right click on title bar)</p>
-        <p>Ctrl + t : New tab dialog (maybe you want to open cmd as admin?)</p>
-        <p>Ctrl + w : Close tab</p>
-        <p>Shift + Alt + number : Fast new tab:</p>
-        <p>Alt + Enter : Fullscreen</p>
+        <h3>Keyboard shortcuts</h3>
 
-        <h2>Shell</h2>
-        <p>Ctrl + Alt + u : Traverse up in directory structure (lovely feature!)</p>
-        <p>End, Home, Ctrl : Traverse text as usual on Windows</p>
-        <p>Ctrl + r : History search</p>
-        <p>Shift + mouse : Select and copy text from buffer</p>
-        <p>Right click / Ctrl + Shift + v : Paste text</p>
+        <div id="shortcut-list">
+            <div class="shortcut">
+                <h4>Tab manipulation</h4>
 
-        <h2>Notes / Docs</h2>
+                <ul style="list-style-type:none;">
+                    <li><code>Ctrl + ` </code>: <strong>Global</strong> Summon from taskbar</li>
+                    <li><code>Win + Alt + p </code>: Preferences (Or right click on title bar)</li>
+                    <li><code>Ctrl + t </code>: New tab dialog (maybe you want to open cmd as admin?)</li>
+                    <li><code>Ctrl + w </code>: Close tab</li>
+                        <ol type="1">
+                            <li>CMD</li>
+                            <li>Powershell</li>
+                        </ol>
+                    <li><code>Shift + Alt + number </code>: Fast new tab:</li>
+                    <li><code>Alt + Enter </code>: Fullscreen</li>
+                </ul>
+            </div>
 
-        <h3>Aliases</h3>
-        <p>There is simple support for aliases. They can be created by using the alias command like this: alias ls=ls --color $*. They are pretty much just doskeys in /config/aliases. One per line. And make sure to handle arguments by putting argument variables $* somewhere.</p>
+            <div class="shortcut">
+                <h4>Shell</h4>
+                
+                <ul style="list-style-type:none;">
+                    <li><code>Ctrl + Alt + u </code>: Traverse up in directory structure (lovely feature!)</li>
+                    <li><code>End, Home, Ctrl </code>: Traverse text as usual on Windows</li>
+                    <li><code>Ctrl + r </code>: History search</li>
+                    <li><code>Shift + mouse </code>: Select and copy text from buffer</li>
+                    <li><code>Right click / Ctrl + Shift + v </code>: Paste text</li>
+                </ul>
+            </div>
+        </div>
 
-        <h3>Updating + Building</h3>
-        <p>There is not much going on here. But if you want to get most recent updates for Conemu just tick auto-updating in preferences. If you want to clone the repo and build it yourself, you will need PowerShell >=3.0 and 7z. When you are set on that, just run scripts/build.ps1.</p>
+        <h3>Notes / Docs</h3>
 
-        <h3>Documentations</h3>
-        <p>Most of the Cmder functionality are documented in the <a href="https://github.com/cmderdev/cmder/blob/master/README.md">readme</a> file on GitHub. We have extented help available in <a href="https://github.com/cmderdev/cmder/wiki">Cmder Wiki</a>, also regarding integration.</p>
-        <p>If you're having trouble with anything, please have a look at the GitHub <a href="https://github.com/cmderdev/cmder/issues?q=is:issue">issues</a>, or <a href"https://github.com/cmderdev/cmder/issues/new">create a new one</a>. 
-        We'll be happy to help, but you might have a better chance to find solutions on the pages of the upstream projects. Those are:</p>
-   
-        <ul style="list-style-type:none;">
-            <li>Console emulator ~ <a href="https://conemu.github.io/">Conemu</a></li>
-            <li>Cmd.exe enhancements ~ <a href="https://mridgers.github.io/clink/">clink</a></li>
-            <li>Unix tools on windows ~ <a href="https://gitforwindows.org/">git for windows</a></li>
-        </ul>
+        <div id="notes-list">
 
+            <div id="notes-column">
+                <div id="note-one">
+                    <h4>Aliases</h4>
+                    <p>There is simple support for aliases. They can be created by using the <code>alias</code> 
+                        command like this:<code> alias ls=ls --color $*</code>. They are pretty much just doskeys 
+                        in <code>/config/aliases</code>. One per line. And make sure to handle arguments by putting argument variables <code>$* </code>somewhere.</p>
+                </div>   
+
+                <div id="note-two">
+                    <h4>Updating + Building</h4>
+                    <p>There is not much going on here. But if you want to get most recent updates 
+                        for Conemu just tick auto-updating in preferences. If you want to clone 
+                        the repo and build it yourself, you will need PowerShell >=3.0 and 7z. When 
+                        you are set on that, just run <code>scripts/build.ps1</code>.</p>
+                </div>
+            </div>
+            
+            <div id="note-three">
+                <h4>Documentations</h4>
+                <p>Most of the Cmder functionality are documented in the <a href="https://github.com/cmderdev/cmder/blob/master/README.md">readme</a> file on GitHub. We have extented help available in <a href="https://github.com/cmderdev/cmder/wiki">Cmder Wiki</a>, also regarding integration.</p>
+                <p>If you're having trouble with anything, please have a look at the GitHub <a href="https://github.com/cmderdev/cmder/issues?q=is:issue">issues</a>, or <a href="https://github.com/cmderdev/cmder/issues/new">create a new one</a>. 
+                We'll be happy to help, but you might have a better chance to find solutions on the pages of the upstream projects. Those are:</p>
+    
+                <ul style="list-style-type:none;">
+                    <li>Console emulator ~ <a href="https://conemu.github.io/">Conemu</a></li>
+                    <li>Cmd.exe enhancements ~ <a href="https://mridgers.github.io/clink/">clink</a></li>
+                    <li>Unix tools on windows ~ <a href="https://gitforwindows.org/">git for windows</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
